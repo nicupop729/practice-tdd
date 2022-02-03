@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.start
 require_relative '../solver'
 
 describe 'test a new instance of Solver' do
