@@ -3,6 +3,7 @@
 # practice-tdd
 
 > This app was built with the purpose to practice Test Driven Development.
+Having the class Solver, this program test the methods `factorial`, `reverse` and `fizz_buzz' of the mentioned class.
 
 ## Built With
 - Ruby
@@ -15,7 +16,14 @@ To get a local copy up and running follow these simple steps.
 To setup the project in your local, in the repo page:
 click on code (dropdown list) > Download as ZIP.
 or open terminal of path you want to install project and run this command <br>
-`git clone git@github.com:nicupop729/practice-tdd.git`
+`git clone git@github.com:nicupop729/practice-tdd.git`<br>
+After cloning, please run the commands:
+**`bundle init`**
+**`rspec spec`**
+
+The coverage folder will be crated and display the coverage after the tests run.
+
+
 ## Authors
 
 👤 **Nicu**

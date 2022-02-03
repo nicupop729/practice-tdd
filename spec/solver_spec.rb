@@ -19,6 +19,10 @@ describe 'test a new instance of Solver' do
     it 'returns an error message for negative number' do
       expect(@new_solver.factorial(-2)).to eq(nil)
     end
+
+    it 'returns 1 if the input is 0' do
+      expect(@new_solver.factorial(0)).to eq(1)
+    end
   end
 
   context 'test the reverse method' do
