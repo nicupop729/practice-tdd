@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 
 gem 'init rspec'
-
-# gem "rails"
+gem 'simplecov', require: false, group: :test

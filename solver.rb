@@ -1,8 +1,9 @@
 class Solver
   def factorial(input)
-    if input <= 0
-      puts 'sorry I only compute the factorial for positive numbers'
+    if input.negative?
       nil
+    elsif input.zero?
+      @product = 1
     else
       @product = 1
       (1..input).each do |number|
