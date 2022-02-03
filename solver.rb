@@ -11,4 +11,8 @@ class Solver
       @product
     end
   end
+
+  def reverse(input)
+    input.reverse
+  end
 end
