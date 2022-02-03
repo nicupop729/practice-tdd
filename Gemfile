@@ -1,5 +1,5 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "init rspec"
+gem 'init rspec'
 
 # gem "rails"

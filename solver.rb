@@ -1,14 +1,14 @@
 class Solver
-  def factorial(n)
-    if n <= 0
-      puts "sorry I only compute the factorial for positive numbers"
-      return
+  def factorial(input)
+    if input <= 0
+      puts 'sorry I only compute the factorial for positive numbers'
+      nil
     else
       @product = 1
-      (1..n).each do |number|
+      (1..input).each do |number|
         @product *= number
       end
-    return @product
+      @product
     end
   end
 end

@@ -1,21 +1,20 @@
-require_relative '../solver.rb'
+require_relative '../solver'
 
-describe 'Test the factorial function' do
-
+describe 'test a new instance of Solver' do
   before(:each) do
-    @new_factorial = Solver.new
+    @new_solver = Solver.new
   end
 
-  context 'test factorial method'
+  contex 'test the factorial '
   it 'returns the rigth answer for 5' do
-    expect(@new_factorial.factorial(5)).to eq(120)
+    expect(@new_solver.factorial(5)).to eq(120)
   end
 
   it 'returns the rigth answer for 10' do
-    expect(@new_factorial.factorial(10)).to eq(3628800)
+    expect(@new_solver.factorial(10)).to eq(3_628_800)
   end
 
   it 'returns an error message for negative number' do
-    expect(@new_factorial.factorial(-2)).to eq(nil)
+    expect(@new_solver.factorial(-2)).to eq(nil)
   end
 end
