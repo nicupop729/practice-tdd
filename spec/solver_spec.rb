@@ -33,7 +33,7 @@ describe 'test a new instance of Solver' do
     end
 
     it 'returns the right result for 54321' do
-      expect { @new_solver.reverse(54321) }.to raise_error(NoMethodError)
+      expect { @new_solver.reverse(54_321) }.to raise_error(NoMethodError)
     end
   end
 

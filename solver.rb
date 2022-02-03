@@ -15,4 +15,12 @@ class Solver
   def reverse(input)
     input.reverse
   end
+
+  def fizz_buzz(input)
+    @fb = ''
+    @fb += 'Fizz' if (input % 3).zero?
+    @fb += 'Buzz' if (input % 5).zero?
+    @fb = input.to_s if @fb == ''
+    @fb
+  end
 end
