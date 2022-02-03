@@ -33,7 +33,25 @@ describe 'test a new instance of Solver' do
     end
 
     it 'returns the right result for 54321' do
-      expect { @new_solver.reverse(54321) } .to raise_error(NoMethodError)
+      expect { @new_solver.reverse(54321) }.to raise_error(NoMethodError)
+    end
+  end
+
+  context 'test the fizz_buzz method' do
+    it 'returns FizzBuzz if number is divisible by 3 & 5' do
+      expect(@new_solver.fizz_buzz(15)).to eq('FizzBuzz')
+    end
+
+    it 'returns Fizz if number is divisible by 3' do
+      expect(@new_solver.fizz_buzz(99)).to eq('Fizz')
+    end
+
+    it 'returns Buzz if number is divisible by 5' do
+      expect(@new_solver.fizz_buzz(125)).to eq('Buzz')
+    end
+
+    it 'returns the number as a string if is not divisible neither by 3 nor 5' do
+      expect(@new_solver.fizz_buzz(161)).to eq('161')
     end
   end
 end
